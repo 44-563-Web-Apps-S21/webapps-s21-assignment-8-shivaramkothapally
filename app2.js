@@ -31,7 +31,7 @@ const server =
             res.write('<tr>')
             res.write('<th>tirupathi</th>')
             res.write('<th>15 </th>')
-            res.write('<th>$150</th>')
+            res.write('<th>150</th>')
             res.write('</tr>')
             res.write('<tr>')
             res.write('<th>St. louis gateway arch</th>')
