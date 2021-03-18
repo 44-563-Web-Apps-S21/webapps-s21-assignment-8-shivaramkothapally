@@ -20,7 +20,7 @@ const server =
             if (req.method === 'GET') {
 
                 const x = search_params.get("x");
-                const r = Math.ceil();
+                const r = Math.ceil(x);
 
                 const result = `ceil of ${x} is  ${r}`;
                 // Process the queries here

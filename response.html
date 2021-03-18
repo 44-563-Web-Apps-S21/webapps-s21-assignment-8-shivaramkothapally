@@ -1,0 +1,20 @@
+<html>
+
+<head>
+    <title> Types of Story telling </title>
+</head>
+
+<body onload="javascript:r()">
+    <h1>Description of watercycle by Shivaram kothapally</h1>
+    <p id="p1">steps of water cycle</p>
+</body>
+<script>
+    function r() {
+        const a = ['Rain', 'water', 'floods', 'rivers', 'ocean', 'clouds'];
+        var cd = Math.floor((Math.random() * 5) + 0);
+        console.log(cd);
+        document.getElementById('p1').innerHTML = a[cd];
+    }
+</script>
+
+</html>

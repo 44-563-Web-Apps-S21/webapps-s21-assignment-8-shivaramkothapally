@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>Compute</title>
+</head>
+
+<body>
+    <h1>Shivaram kothapally computes</h1>
+    <label for="text">Number1</label>
+    <input type="number" id="n1" name="form1_text"> <br><br>
+    <label for="text">Number2</label>
+    <input type="number" id="n2" name="form1_text"> <br><br>
+    <div id="res">result will be displayed</div> <br>
+    <button onclick="handle()">Handler</button>
+</body>
+<script>
+    const handle = () => {
+        const n1 = document.getElementById("n1").value;
+        let n2 = document.getElementById("n2").value;
+        let url = `http://127.0.0.1:3001?x=${n1}`
+
+        fetch(url).then(
+            (response) => {
+                console.log(response)
+                return response.text();
+            }
+        ).then((data) => {
+            console.log(data)
+            document.getElementById("res").innerHTML = data
+        }).catch(err => {
+            document.getElementById("result").innerHTML = err
+        })
+    }
+</script>
+
+</html>
